@@ -4,21 +4,6 @@ import '../organisms/product_catalog_section.dart';
 import '../organisms/add_product_form.dart';
 import '../templates/catalog_template.dart';
 
-/// Page: the only widget allowed to hold the real product list. It owns
-/// the seven hardcoded starter products (each with its original icon),
-/// the `_nextId` counter, and — deliberately — the search query too. The
-/// search query isn't "core product data," but it has to live somewhere
-/// both the catalog section and the submit handler can reach: the
-/// starter resets it as a side effect of successfully adding a product,
-/// so something has to coordinate across those two otherwise-independent
-/// sections. Lifting it to the Page is that coordination point (see the
-/// note on this specific call in JUSTIFICATION.md).
-///
-/// This is also the only place that assigns a new product's id and icon
-/// (Icons.inventory_2, exactly as the starter hardcoded it for submitted
-/// products) and the only place that decides what "added successfully"
-/// feedback looks like, because that feedback is a direct reaction to
-/// the real catalog changing — something only the Page can see happened.
 class ProductCatalogPage extends StatefulWidget {
   const ProductCatalogPage({super.key});
 
