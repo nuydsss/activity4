@@ -1,8 +1,4 @@
 import 'package:flutter/material.dart';
-
-/// Atom: formats a raw price double into the starter's "PHP X.XX" string
-/// and renders it. Takes a double, not a Product, so it can't reach for
-/// anything beyond the single value it needs.
 class ProductPriceText extends StatelessWidget {
   final double price;
   const ProductPriceText(this.price, {super.key});
