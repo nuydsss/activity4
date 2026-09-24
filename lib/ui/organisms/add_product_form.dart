@@ -6,24 +6,6 @@ import '../atoms/filled_action_button.dart';
 
 const _kCategories = ['Electronics', 'Home', 'Office', 'Accessories'];
 
-/// Organism: the whole "Add New Product" form — the Form widget and its
-/// GlobalKey, the Name/Price/Description AppTextFormField atoms, the
-/// CategoryDropdownField atom, and the "Submit Product" FilledActionButton
-/// atom, all wired to the exact validation rules from
-/// ProductFormValidators. Running `_formKey.currentState!.validate()` and
-/// tracking the selected category are local logic that belongs here
-/// (organisms may contain local logic).
-///
-/// What this organism deliberately does NOT do is decide the new
-/// product's id or icon, or touch the real product list. A valid submit
-/// only calls [onSubmit] with the raw field values (name, price, category,
-/// description); assigning an id, defaulting the icon to
-/// Icons.inventory_2, and actually adding the product to the catalog are
-/// all core-data decisions the starter made in the same place it owned
-/// `_nextId` and `_products` — so in this refactor they stay together,
-/// on the Page. Once [onSubmit] returns, this organism clears its own
-/// controllers and resets its own category selection back to
-/// 'Electronics', mirroring the starter's reset exactly.
 class AddProductForm extends StatefulWidget {
   final void Function({
     required String name,
