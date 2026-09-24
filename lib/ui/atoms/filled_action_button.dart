@@ -1,11 +1,4 @@
 import 'package:flutter/material.dart';
-
-/// Atom: the one indigo-background, white-foreground ElevatedButton style
-/// the starter uses twice — "Add to Cart" (default text style, not full
-/// width) and "Submit Product" (bold white 16, full width, extra vertical
-/// padding). One parameterized atom replaces both hand-written buttons;
-/// it takes a label and a callback and renders itself, with no idea what
-/// pressing it will actually do.
 class FilledActionButton extends StatelessWidget {
   final String label;
   final VoidCallback onPressed;
