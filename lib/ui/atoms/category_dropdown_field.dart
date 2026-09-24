@@ -1,10 +1,4 @@
 import 'package:flutter/material.dart';
-
-/// Atom: a thin wrapper around `DropdownButtonFormField<String>`. Takes
-/// the current value, the list of choices, a label, and an onChanged
-/// callback, and renders itself. It doesn't decide what the category
-/// choices are (that list is passed in) or what happens when one is
-/// picked — it just reports the change upward.
 class CategoryDropdownField extends StatelessWidget {
   final String value;
   final List<String> categories;
