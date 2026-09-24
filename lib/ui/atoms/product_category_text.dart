@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-
-/// Atom: a product's category label, styled small and grey.
 class ProductCategoryText extends StatelessWidget {
   final String category;
   const ProductCategoryText(this.category, {super.key});
