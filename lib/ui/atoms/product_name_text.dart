@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-
-/// Atom: a product's name, styled. Takes a string, renders Text.
 class ProductNameText extends StatelessWidget {
   final String name;
   const ProductNameText(this.name, {super.key});
