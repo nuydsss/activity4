@@ -1,8 +1,4 @@
 import 'package:flutter/material.dart';
-
-/// Atom: the 56x56 rounded, indigo-tinted icon box each product card
-/// shows. Takes an IconData, renders the box — no idea which product
-/// it belongs to.
 class ProductIconTile extends StatelessWidget {
   final IconData icon;
   const ProductIconTile({super.key, required this.icon});
